@@ -1,0 +1,32 @@
+class Solution {
+  public:
+    void printspace(int n,int i)
+    {
+       for(int k=n-i;k>0;k--)
+        {
+            cout<<" ";
+        } 
+    }
+    void printstar(int n,int i)
+    {
+        for(int j=1;j<=i;j++)
+        {
+            cout<<"* ";
+        }
+    }
+    void printDiamond(int n) {
+        // code here
+        for(int i=1;i<=n;i++)
+        {
+            printspace(n,i);
+            printstar(n,i);
+            cout<<endl;
+        }
+        for(int i=n;i>0;i--)
+        {
+            printspace(n,i);
+            printstar(n,i);
+            cout<<endl;
+        }
+    }
+};

@@ -1,0 +1,15 @@
+class Solution {
+  public:
+    void printTriangle(int n) {
+        // code here
+        for(int i=1;i<=n;i++)
+        {
+            int ch=65;
+            for(int j=0;j<i;j++)
+            {
+                cout<<(char)(ch+n-1-j)<<" ";
+            }
+            cout<<endl;
+        }
+    }
+};

@@ -1,0 +1,35 @@
+class Solution {
+  public:
+    int noofspace(int n)
+    {
+        int space;
+        if(n%2==0) space=(n/2);
+        else space=(n/2)+1;
+        return space;
+    }
+    void printSquare(int n) {
+        // code here
+        for(int i=1;i<=n;i++)
+        {
+            if(i==1 || i==n)
+            {
+                for(int j=1;j<=n;j++)
+                {
+                    cout<<"*";
+                }
+                cout<<endl;
+            }
+            else
+            {
+                int space=noofspace(n);
+                cout<<"*";
+                for(int j=1;j<=space;j++)
+                {
+                    cout<<" ";
+                }
+                cout<<"*";
+                cout<<endl;
+            }
+        }
+    }
+};
